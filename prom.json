@@ -1,0 +1,105 @@
+{
+   "ID": "dufqzsikn24s2nshex4fh15pa",
+   "Name": "Bryan-Prometheus",
+   "Title": "Bryan-Prometheus",
+   "Version": "1",
+   "Context": null,
+   "Environment": null,
+   "Startup": "",
+   "RunAs": "",
+   "Description": "Bryan-Prometheus / created by me, probably, or others, maybe",
+   "Tags": null,
+   "OriginalConfigs": {},
+   "ConfigFiles": {},
+   "Instances": 1,
+   "InstanceLimits": {
+     "Min": 1,
+     "Max": 1,
+     "Default": 1
+   },
+   "ChangeOptions": null,
+   "ImageID": "dufqzsikn24s2nshex4fh15pa/prometheus:latest",
+   "PoolID": "RM",
+   "DesiredState": 0,
+   "CurrentState": "stopped",
+   "HostPolicy": "",
+   "Hostname": "",
+   "Privileged": false,
+   "Launch": "auto",
+   "Endpoints": [
+     {
+       "Name": "prometheus",
+       "Purpose": "export",
+       "Protocol": "tcp",
+       "PortNumber": 9090,
+       "PortTemplate": "",
+       "VirtualAddress": "",
+       "Application": "Prometheus",
+       "ApplicationTemplate": "Prometheus",
+       "AddressConfig": {
+         "Port": 9090,
+         "Protocol": "tcp"
+       },
+       "VHosts": null,
+       "VHostList": [
+         {
+           "Name": "bryan-prometheus",
+           "Enabled": false
+         }
+       ],
+       "AddressAssignment": {
+         "ID": "53hbakp2s7jimawjzz7iyzzeq",
+         "AssignmentType": "static",
+         "HostID": "402f7814",
+         "PoolID": "RM",
+         "IPAddr": "10.88.111.251",
+         "Port": 9090,
+         "ServiceID": "dufqzsikn24s2nshex4fh15pa",
+         "EndpointName": "prometheus",
+         "type": "addressassignment"
+       },
+       "PortList": null
+     }
+   ],
+   "ParentServiceID": "",
+   "Volumes": null,
+   "CreatedAt": "2024-05-24T20:36:35.759298359Z",
+   "UpdatedAt": "2024-05-24T20:49:47.336498221Z",
+   "DeploymentID": "Prom",
+   "DisableImage": false,
+   "LogConfigs": null,
+   "Snapshot": {
+     "Pause": "",
+     "Resume": ""
+   },
+   "DisableShell": false,
+   "Runs": null,
+   "Commands": null,
+   "RAMCommitment": "64M",
+   "RAMThreshold": 0,
+   "CPUCommitment": 1,
+   "Actions": null,
+   "HealthChecks": {
+     "health": {
+       "Script": "/bin/env echo 1",
+       "Timeout": 10,
+       "Interval": 10,
+       "Tolerance": 0
+     }
+   },
+   "Prereqs": null,
+   "MonitoringProfile": {
+     "MetricConfigs": [],
+     "GraphConfigs": [],
+     "ThresholdConfigs": []
+   },
+   "MemoryLimit": 0,
+   "CPUShares": 0,
+   "OomKillDisable": false,
+   "OomScoreAdj": 0,
+   "PIDFile": "",
+   "StartLevel": 0,
+   "EmergencyShutdownLevel": 0,
+   "EmergencyShutdown": false,
+   "type": "service"
+ }

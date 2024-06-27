@@ -1,0 +1,105 @@
+{
+   "ID": "41brrgl6a661y6sfj2buex6li",
+   "Name": "Bryan-Grafana",
+   "Title": "Bryan-Grafana",
+   "Version": "1",
+   "Context": null,
+   "Environment": null,
+   "Startup": "grafana server --config=/etc/grafana/grafana.ini --homepath=/usr/share/grafana",
+   "RunAs": "",
+   "Description": "Bryan-Grafana / created by me, probably, or others, maybe",
+   "Tags": null,
+   "OriginalConfigs": {},
+   "ConfigFiles": {},
+   "Instances": 1,
+   "InstanceLimits": {
+     "Min": 1,
+     "Max": 1,
+     "Default": 1
+   },
+   "ChangeOptions": null,
+   "ImageID": "41brrgl6a661y6sfj2buex6li/grafana:latest",
+   "PoolID": "RM",
+   "DesiredState": 1,
+   "CurrentState": "started",
+   "HostPolicy": "",
+   "Hostname": "",
+   "Privileged": false,
+   "Launch": "auto",
+   "Endpoints": [
+     {
+       "Name": "grafana",
+       "Purpose": "export",
+       "Protocol": "tcp",
+       "PortNumber": 3000,
+       "PortTemplate": "",
+       "VirtualAddress": "",
+       "Application": "Grafana",
+       "ApplicationTemplate": "Grafana",
+       "AddressConfig": {
+         "Port": 3000,
+         "Protocol": "tcp"
+       },
+       "VHosts": null,
+       "VHostList": [
+         {
+           "Name": "bryan-grafana",
+           "Enabled": true
+         }
+       ],
+       "AddressAssignment": {
+         "ID": "vqwwl4am6cfz734g6pkj4tts",
+         "AssignmentType": "static",
+         "HostID": "402f7814",
+         "PoolID": "RM",
+         "IPAddr": "10.88.111.251",
+         "Port": 3000,
+         "ServiceID": "41brrgl6a661y6sfj2buex6li",
+         "EndpointName": "grafana",
+         "type": "addressassignment"
+       },
+       "PortList": null
+     }
+   ],
+   "ParentServiceID": "",
+   "Volumes": null,
+   "CreatedAt": "2024-05-31T02:22:17.1605831Z",
+   "UpdatedAt": "2024-05-31T02:29:03.917832161Z",
+   "DeploymentID": "Grafana",
+   "DisableImage": false,
+   "LogConfigs": null,
+   "Snapshot": {
+     "Pause": "",
+     "Resume": ""
+   },
+   "DisableShell": false,
+   "Runs": null,
+   "Commands": null,
+   "RAMCommitment": "64M",
+   "RAMThreshold": 0,
+   "CPUCommitment": 1,
+   "Actions": null,
+   "HealthChecks": {
+     "health": {
+       "Script": "/bin/env echo 1",
+       "Timeout": 10,
+       "Interval": 10,
+       "Tolerance": 0
+     }
+   },
+   "Prereqs": null,
+   "MonitoringProfile": {
+     "MetricConfigs": [],
+     "GraphConfigs": [],
+     "ThresholdConfigs": []
+   },
+   "MemoryLimit": 0,
+   "CPUShares": 0,
+   "OomKillDisable": false,
+   "OomScoreAdj": 0,
+   "PIDFile": "",
+   "StartLevel": 0,
+   "EmergencyShutdownLevel": 0,
+   "EmergencyShutdown": false,
+   "type": "service"
+ }
